@@ -65,7 +65,7 @@
 			return 'object';
 	    };
 		
-		var isType = function (item, type) {
+	    var isType = function (item, type) {
 			if (item && item.constructor === type.constructor) 
 		    	return true;
 			else if (Object.prototype.toString.call(item) === type.constructor)
