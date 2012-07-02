@@ -1,0 +1,11 @@
+{
+	"name"            : "typist",
+	"description"     : "Reliable typeof operator replacement and related utilities.",
+	"version"         : "0.1.0",
+	"author"          : "Ben Scholz <bbscholz@gmail.com>",
+	"main"            : "./src/typist",
+	"keywords"        : [ "type", "typeof" ],
+	"scripts"         : { "test": "expresso test/typist/*" },
+	"devDependencies" : { "expresso": "*" },
+	"license"         : "MIT"	
+}

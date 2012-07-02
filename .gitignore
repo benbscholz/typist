@@ -1,0 +1,13 @@
+*.log
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+test/builtin
+
+node-modules
+npm-debug.log
