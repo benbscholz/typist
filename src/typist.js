@@ -98,33 +98,6 @@
 			return isType(item, OBJECT);    
 	    };
 
-	    // To build an 'isType' function for any type, use buildIsType.
-	    // We can build one for typed arrays of 8 bit signed integers.
-	    //
-	    // var isInt8Array = buildIsType('Int8Array', Int8Array);
-	    //
-	    // The first argument is the name of the type as a string.
-	    // It is used to build to string returned by the call to
-	    //
-	    // Object.prototype.toString.call(item);
-	    //
-	    // The case of the type string is corrected automatically.
-	    //
-	    // 'Int8Array' becomes '[object Int8Array]'
-	    // 'int8Array' becomes '[object Int8Array]'
-	    //
-	    // The second argument is the constructor function of the type.
-	    //
-	    // As another example, we can construct any of the primitive type
-	    // identifying functions.
-	    //
-	    // var isNumber = buildIsType('number', Number);
-	    // var isArray = buildIsType('array', Array);
-	    // 
-	    // These constructed versions are less efficient than the ones provided
-	    // below since the type operator will never succeed (the types you construct 
-	    // will assume that `typeof yourObj` returns 'object').
-	    //
 	    var buildIsType = function (type, constructor) {
 			return function (item) {
 		    	return isType(item, buildType(type, constructor));
