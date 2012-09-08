@@ -1,4 +1,4 @@
-// typist v0.1.0
+// typist v0.1.1
 // Reliable typeOf function and related utilities.
 // (c) 2012 Ben Brooks Scholz 
 // MIT Licensed.

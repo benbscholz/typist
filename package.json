@@ -1,7 +1,7 @@
 {
   "name": "typist",
   "description": "Reliable typeof operator replacement and related utilities.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Ben Scholz <bbscholz@gmail.com>",
   "main": "./src/typist",
   "keywords": [
