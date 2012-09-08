@@ -45,8 +45,8 @@
     };
 
     var typeOf = function (item) {
-      var type = typeof item;
       var prototype;
+      var type = typeof item;
 
       if (type === 'string'  || item.constructor === String)   return 'string';
       if (type === 'number'  || item.constructor === Number)   return 'number';
@@ -66,12 +66,8 @@
     };
   
     var isType = function (item, type) {
-      if (item && item.constructor === type.constructor) 
-        return true;
-      else if (Object.prototype.toString.call(item) === type.constructor)
-        return true;
-      else
-        return false;
+      return (item && item.constructor === type.constructor) ||
+             (Object.prototype.toString.call(item) === type.constructor);
     };
 
     var isString = function (item) {
